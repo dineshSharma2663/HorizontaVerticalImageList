@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08E1F621C6C4318CDDA4F465 /* Pods_DeltaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887FDA38C3547302DC8E2A90 /* Pods_DeltaTask.framework */; };
+		170EBDBA9E7B9938815B0BF8 /* Pods_DeltaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A22B60A480DAEB80F4CB727D /* Pods_DeltaTaskTests.framework */; };
+		37E36807148A51389ABB658D /* Pods_DeltaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1232BDB707A0A42702426FA4 /* Pods_DeltaTaskUITests.framework */; };
+		7143207C20BAC65300BE3742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143207B20BAC65300BE3742 /* AppDelegate.swift */; };
+		7143208120BAC65300BE3742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7143207F20BAC65300BE3742 /* Main.storyboard */; };
+		7143208320BAC65400BE3742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7143208220BAC65400BE3742 /* Assets.xcassets */; };
+		7143208620BAC65400BE3742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7143208420BAC65400BE3742 /* LaunchScreen.storyboard */; };
+		7143209120BAC65400BE3742 /* DeltaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143209020BAC65400BE3742 /* DeltaTaskTests.swift */; };
+		7143209C20BAC65400BE3742 /* DeltaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7143209B20BAC65400BE3742 /* DeltaTaskUITests.swift */; };
+		714320AB20BAC6B500BE3742 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714320AA20BAC6B500BE3742 /* APIManager.swift */; };
+		714320B320BAD56B00BE3742 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714320B220BAD56B00BE3742 /* CollectionView.swift */; };
+		715AC47220BAE1F1000442AF /* DeltaTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 715AC47020BAE1F1000442AF /* DeltaTask.xcdatamodeld */; };
+		717B88DE20BCA31000927FF7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717B88DD20BCA31000927FF7 /* Reachability.swift */; };
+		F9903C9420BC99BE0061998C /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903C9320BC99BE0061998C /* AppConstants.swift */; };
+		F9903CA420BCA0F50061998C /* HorizontalImageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903C9820BCA0F40061998C /* HorizontalImageListVC.swift */; };
+		F9903CA520BCA0F50061998C /* ImageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903C9D20BCA0F40061998C /* ImageListViewModel.swift */; };
+		F9903CA620BCA0F50061998C /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903C9F20BCA0F40061998C /* ImagesListViewController.swift */; };
+		F9903CA720BCA0F50061998C /* ImageListVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903CA020BCA0F40061998C /* ImageListVCExtension.swift */; };
+		F9903CA820BCA0F50061998C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9903CA320BCA0F40061998C /* ImageCollectionViewCell.swift */; };
+		F9CB026820BB30900075F0A0 /* StatusBarMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB025C20BB30900075F0A0 /* StatusBarMessageView.swift */; };
+		F9CB026920BB30900075F0A0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CB025E20BB30900075F0A0 /* Utilities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7143208D20BAC65400BE3742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7143207020BAC65200BE3742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7143207720BAC65200BE3742;
+			remoteInfo = DeltaTask;
+		};
+		7143209820BAC65400BE3742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7143207020BAC65200BE3742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7143207720BAC65200BE3742;
+			remoteInfo = DeltaTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08C96448FB4187444900CCB8 /* Pods-DeltaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTaskUITests/Pods-DeltaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1010F49D8786960E9EA98FFE /* Pods-DeltaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTaskTests/Pods-DeltaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		1232BDB707A0A42702426FA4 /* Pods_DeltaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224770ACBC8C701DEB14ADF0 /* Pods-DeltaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTaskUITests/Pods-DeltaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BC2D09330B8B024487F8214 /* Pods-DeltaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTask/Pods-DeltaTask.release.xcconfig"; sourceTree = "<group>"; };
+		7143207820BAC65300BE3742 /* DeltaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7143207B20BAC65300BE3742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7143208020BAC65300BE3742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7143208220BAC65400BE3742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7143208520BAC65400BE3742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7143208720BAC65400BE3742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7143208C20BAC65400BE3742 /* DeltaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7143209020BAC65400BE3742 /* DeltaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaTaskTests.swift; sourceTree = "<group>"; };
+		7143209220BAC65400BE3742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7143209720BAC65400BE3742 /* DeltaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeltaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7143209B20BAC65400BE3742 /* DeltaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeltaTaskUITests.swift; sourceTree = "<group>"; };
+		7143209D20BAC65400BE3742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714320AA20BAC6B500BE3742 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		714320B220BAD56B00BE3742 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		715AC47120BAE1F1000442AF /* DeltaTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeltaTask.xcdatamodel; sourceTree = "<group>"; };
+		717B88DD20BCA31000927FF7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		887FDA38C3547302DC8E2A90 /* Pods_DeltaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C213CB0AB09036093772207 /* Pods-DeltaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTask/Pods-DeltaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A22B60A480DAEB80F4CB727D /* Pods_DeltaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeltaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1DF055C471972DC4F105A9 /* Pods-DeltaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeltaTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeltaTaskTests/Pods-DeltaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9903C9320BC99BE0061998C /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F9903C9820BCA0F40061998C /* HorizontalImageListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalImageListVC.swift; sourceTree = "<group>"; };
+		F9903C9D20BCA0F40061998C /* ImageListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListViewModel.swift; sourceTree = "<group>"; };
+		F9903C9F20BCA0F40061998C /* ImagesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
+		F9903CA020BCA0F40061998C /* ImageListVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListVCExtension.swift; sourceTree = "<group>"; };
+		F9903CA320BCA0F40061998C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		F9CB025C20BB30900075F0A0 /* StatusBarMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarMessageView.swift; sourceTree = "<group>"; };
+		F9CB025E20BB30900075F0A0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7143207520BAC65200BE3742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E1F621C6C4318CDDA4F465 /* Pods_DeltaTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143208920BAC65400BE3742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				170EBDBA9E7B9938815B0BF8 /* Pods_DeltaTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143209420BAC65400BE3742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E36807148A51389ABB658D /* Pods_DeltaTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D888F8FD1B875D811BD239 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887FDA38C3547302DC8E2A90 /* Pods_DeltaTask.framework */,
+				A22B60A480DAEB80F4CB727D /* Pods_DeltaTaskTests.framework */,
+				1232BDB707A0A42702426FA4 /* Pods_DeltaTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7143206F20BAC65200BE3742 = {
+			isa = PBXGroup;
+			children = (
+				715AC47020BAE1F1000442AF /* DeltaTask.xcdatamodeld */,
+				7143207A20BAC65300BE3742 /* DeltaTask */,
+				7143208F20BAC65400BE3742 /* DeltaTaskTests */,
+				7143209A20BAC65400BE3742 /* DeltaTaskUITests */,
+				7143207920BAC65300BE3742 /* Products */,
+				CC602AF9A98CCF8C09995BAF /* Pods */,
+				24D888F8FD1B875D811BD239 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7143207920BAC65300BE3742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7143207820BAC65300BE3742 /* DeltaTask.app */,
+				7143208C20BAC65400BE3742 /* DeltaTaskTests.xctest */,
+				7143209720BAC65400BE3742 /* DeltaTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7143207A20BAC65300BE3742 /* DeltaTask */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9520BCA0F40061998C /* HorizontalList */,
+				F9903C9B20BCA0F40061998C /* VerticalList */,
+				F9CB025B20BB30900075F0A0 /* CustomViews */,
+				F9CB025D20BB30900075F0A0 /* Utilities */,
+				714320A920BAC67000BE3742 /* NetworkingManager */,
+				7143207B20BAC65300BE3742 /* AppDelegate.swift */,
+				7143207F20BAC65300BE3742 /* Main.storyboard */,
+				7143208220BAC65400BE3742 /* Assets.xcassets */,
+				7143208420BAC65400BE3742 /* LaunchScreen.storyboard */,
+				7143208720BAC65400BE3742 /* Info.plist */,
+				714320B220BAD56B00BE3742 /* CollectionView.swift */,
+			);
+			path = DeltaTask;
+			sourceTree = "<group>";
+		};
+		7143208F20BAC65400BE3742 /* DeltaTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				7143209020BAC65400BE3742 /* DeltaTaskTests.swift */,
+				7143209220BAC65400BE3742 /* Info.plist */,
+			);
+			path = DeltaTaskTests;
+			sourceTree = "<group>";
+		};
+		7143209A20BAC65400BE3742 /* DeltaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7143209B20BAC65400BE3742 /* DeltaTaskUITests.swift */,
+				7143209D20BAC65400BE3742 /* Info.plist */,
+			);
+			path = DeltaTaskUITests;
+			sourceTree = "<group>";
+		};
+		714320A920BAC67000BE3742 /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				717B88DD20BCA31000927FF7 /* Reachability.swift */,
+				714320AA20BAC6B500BE3742 /* APIManager.swift */,
+			);
+			path = NetworkingManager;
+			sourceTree = "<group>";
+		};
+		CC602AF9A98CCF8C09995BAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C213CB0AB09036093772207 /* Pods-DeltaTask.debug.xcconfig */,
+				4BC2D09330B8B024487F8214 /* Pods-DeltaTask.release.xcconfig */,
+				DA1DF055C471972DC4F105A9 /* Pods-DeltaTaskTests.debug.xcconfig */,
+				1010F49D8786960E9EA98FFE /* Pods-DeltaTaskTests.release.xcconfig */,
+				08C96448FB4187444900CCB8 /* Pods-DeltaTaskUITests.debug.xcconfig */,
+				224770ACBC8C701DEB14ADF0 /* Pods-DeltaTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9903C9520BCA0F40061998C /* HorizontalList */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9620BCA0F40061998C /* ViewModel */,
+				F9903C9720BCA0F40061998C /* Controller */,
+				F9903C9920BCA0F40061998C /* Model */,
+				F9903C9A20BCA0F40061998C /* View */,
+			);
+			path = HorizontalList;
+			sourceTree = "<group>";
+		};
+		F9903C9620BCA0F40061998C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9903C9720BCA0F40061998C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9820BCA0F40061998C /* HorizontalImageListVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9903C9920BCA0F40061998C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9903C9A20BCA0F40061998C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9903C9B20BCA0F40061998C /* VerticalList */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9C20BCA0F40061998C /* ViewModel */,
+				F9903C9E20BCA0F40061998C /* Controller */,
+				F9903CA120BCA0F40061998C /* Model */,
+				F9903CA220BCA0F40061998C /* Views */,
+			);
+			path = VerticalList;
+			sourceTree = "<group>";
+		};
+		F9903C9C20BCA0F40061998C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9D20BCA0F40061998C /* ImageListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9903C9E20BCA0F40061998C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9903C9F20BCA0F40061998C /* ImagesListViewController.swift */,
+				F9903CA020BCA0F40061998C /* ImageListVCExtension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9903CA120BCA0F40061998C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9903CA220BCA0F40061998C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9903CA320BCA0F40061998C /* ImageCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9CB025B20BB30900075F0A0 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				F9CB025C20BB30900075F0A0 /* StatusBarMessageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F9CB025D20BB30900075F0A0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F9CB025E20BB30900075F0A0 /* Utilities.swift */,
+				F9903C9320BC99BE0061998C /* AppConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7143207720BAC65200BE3742 /* DeltaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714320A020BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTask" */;
+			buildPhases = (
+				C48B55911D310EB28A84F4A6 /* [CP] Check Pods Manifest.lock */,
+				7143207420BAC65200BE3742 /* Sources */,
+				7143207520BAC65200BE3742 /* Frameworks */,
+				7143207620BAC65200BE3742 /* Resources */,
+				C84830386995E9E4DB1BE1F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeltaTask;
+			productName = DeltaTask;
+			productReference = 7143207820BAC65300BE3742 /* DeltaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7143208B20BAC65400BE3742 /* DeltaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714320A320BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTaskTests" */;
+			buildPhases = (
+				21F1AB47310F83181BA32EA2 /* [CP] Check Pods Manifest.lock */,
+				7143208820BAC65400BE3742 /* Sources */,
+				7143208920BAC65400BE3742 /* Frameworks */,
+				7143208A20BAC65400BE3742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7143208E20BAC65400BE3742 /* PBXTargetDependency */,
+			);
+			name = DeltaTaskTests;
+			productName = DeltaTaskTests;
+			productReference = 7143208C20BAC65400BE3742 /* DeltaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7143209620BAC65400BE3742 /* DeltaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714320A620BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTaskUITests" */;
+			buildPhases = (
+				0E8B6BDEFC6D743AAE3BAB42 /* [CP] Check Pods Manifest.lock */,
+				7143209320BAC65400BE3742 /* Sources */,
+				7143209420BAC65400BE3742 /* Frameworks */,
+				7143209520BAC65400BE3742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7143209920BAC65400BE3742 /* PBXTargetDependency */,
+			);
+			name = DeltaTaskUITests;
+			productName = DeltaTaskUITests;
+			productReference = 7143209720BAC65400BE3742 /* DeltaTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7143207020BAC65200BE3742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Dinesh Kumar";
+				TargetAttributes = {
+					7143207720BAC65200BE3742 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					7143208B20BAC65400BE3742 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 7143207720BAC65200BE3742;
+					};
+					7143209620BAC65400BE3742 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 7143207720BAC65200BE3742;
+					};
+				};
+			};
+			buildConfigurationList = 7143207320BAC65200BE3742 /* Build configuration list for PBXProject "DeltaTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7143206F20BAC65200BE3742;
+			productRefGroup = 7143207920BAC65300BE3742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7143207720BAC65200BE3742 /* DeltaTask */,
+				7143208B20BAC65400BE3742 /* DeltaTaskTests */,
+				7143209620BAC65400BE3742 /* DeltaTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7143207620BAC65200BE3742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7143208620BAC65400BE3742 /* LaunchScreen.storyboard in Resources */,
+				7143208320BAC65400BE3742 /* Assets.xcassets in Resources */,
+				7143208120BAC65300BE3742 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143208A20BAC65400BE3742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143209520BAC65400BE3742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E8B6BDEFC6D743AAE3BAB42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeltaTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21F1AB47310F83181BA32EA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeltaTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48B55911D310EB28A84F4A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeltaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C84830386995E9E4DB1BE1F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DeltaTask/Pods-DeltaTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeltaTask/Pods-DeltaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7143207420BAC65200BE3742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717B88DE20BCA31000927FF7 /* Reachability.swift in Sources */,
+				F9903CA720BCA0F50061998C /* ImageListVCExtension.swift in Sources */,
+				715AC47220BAE1F1000442AF /* DeltaTask.xcdatamodeld in Sources */,
+				F9903CA520BCA0F50061998C /* ImageListViewModel.swift in Sources */,
+				F9CB026920BB30900075F0A0 /* Utilities.swift in Sources */,
+				714320AB20BAC6B500BE3742 /* APIManager.swift in Sources */,
+				714320B320BAD56B00BE3742 /* CollectionView.swift in Sources */,
+				F9903CA620BCA0F50061998C /* ImagesListViewController.swift in Sources */,
+				F9CB026820BB30900075F0A0 /* StatusBarMessageView.swift in Sources */,
+				F9903CA420BCA0F50061998C /* HorizontalImageListVC.swift in Sources */,
+				F9903CA820BCA0F50061998C /* ImageCollectionViewCell.swift in Sources */,
+				F9903C9420BC99BE0061998C /* AppConstants.swift in Sources */,
+				7143207C20BAC65300BE3742 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143208820BAC65400BE3742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7143209120BAC65400BE3742 /* DeltaTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7143209320BAC65400BE3742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7143209C20BAC65400BE3742 /* DeltaTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7143208E20BAC65400BE3742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7143207720BAC65200BE3742 /* DeltaTask */;
+			targetProxy = 7143208D20BAC65400BE3742 /* PBXContainerItemProxy */;
+		};
+		7143209920BAC65400BE3742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7143207720BAC65200BE3742 /* DeltaTask */;
+			targetProxy = 7143209820BAC65400BE3742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7143207F20BAC65300BE3742 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7143208020BAC65300BE3742 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7143208420BAC65400BE3742 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7143208520BAC65400BE3742 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7143209E20BAC65400BE3742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7143209F20BAC65400BE3742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		714320A120BAC65400BE3742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C213CB0AB09036093772207 /* Pods-DeltaTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.delta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		714320A220BAC65400BE3742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC2D09330B8B024487F8214 /* Pods-DeltaTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.delta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		714320A420BAC65400BE3742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1DF055C471972DC4F105A9 /* Pods-DeltaTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.DeltaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaTask.app/DeltaTask";
+			};
+			name = Debug;
+		};
+		714320A520BAC65400BE3742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1010F49D8786960E9EA98FFE /* Pods-DeltaTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.DeltaTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeltaTask.app/DeltaTask";
+			};
+			name = Release;
+		};
+		714320A720BAC65400BE3742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C96448FB4187444900CCB8 /* Pods-DeltaTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.DeltaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeltaTask;
+			};
+			name = Debug;
+		};
+		714320A820BAC65400BE3742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 224770ACBC8C701DEB14ADF0 /* Pods-DeltaTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8786VRXN;
+				INFOPLIST_FILE = DeltaTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.task.DeltaTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeltaTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7143207320BAC65200BE3742 /* Build configuration list for PBXProject "DeltaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7143209E20BAC65400BE3742 /* Debug */,
+				7143209F20BAC65400BE3742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714320A020BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714320A120BAC65400BE3742 /* Debug */,
+				714320A220BAC65400BE3742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714320A320BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714320A420BAC65400BE3742 /* Debug */,
+				714320A520BAC65400BE3742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714320A620BAC65400BE3742 /* Build configuration list for PBXNativeTarget "DeltaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714320A720BAC65400BE3742 /* Debug */,
+				714320A820BAC65400BE3742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		715AC47020BAE1F1000442AF /* DeltaTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				715AC47120BAE1F1000442AF /* DeltaTask.xcdatamodel */,
+			);
+			currentVersion = 715AC47120BAE1F1000442AF /* DeltaTask.xcdatamodel */;
+			path = DeltaTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7143207020BAC65200BE3742 /* Project object */;
+}
