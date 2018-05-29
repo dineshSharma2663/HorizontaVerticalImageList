@@ -26,6 +26,7 @@ class ImagesListViewController: UIViewController {
     //MARK: - Referencing Outlets
     @IBOutlet weak var imagesCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicator : UIActivityIndicatorView!
+    @IBOutlet weak var noImagesPlaceholderLabel : UILabel!
     
     private let refreshControl = UIRefreshControl()
     var imageViewModel = ImageListViewModel()
@@ -157,13 +158,28 @@ class ImagesListViewController: UIViewController {
             _self.activityIndicator.stopAnimating()
             if error == nil{
                 _self.saveAllImages()
+            }else{
+                _self.getImagesErrorHandling(errorMessage: error?.localizedDescription)
             }
         }
     }
     
     
+    /// Show Centered placeholder label if api fails or for no images data
+    ///
+    /// - Parameter errorMessage: <#errorMessage description#>
+    func getImagesErrorHandling(errorMessage:String?){
+        noImagesPlaceholderLabel.isHidden = imageViewModel.imagesArray.count != 0
+        imagesCollectionView.isHidden = !noImagesPlaceholderLabel.isHidden
+        self.noImagesPlaceholderLabel.text = errorMessage
+    }
+    
     /// Save All Images in Core Data Using Private Concurrency Queue
     func saveAllImages(){
+        
+        //Check if api returns an empty array
+        imagesCollectionView.isHidden = imageViewModel.imagesArray.count == 0
+        
         //Images Array to be saved
         let array =  imageViewModel.imagesArray //JSON data to be imported into Core Data
         let privateMOC = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)

@@ -104,10 +104,19 @@
                                 <rect key="frame" x="197" y="358" width="20" height="20"/>
                                 <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA5-1X-aeQ">
+                                <rect key="frame" x="20" y="360" width="374" height="17.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8pH-QV-7AT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2EZ-oC-yzb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yA5-1X-aeQ" secondAttribute="trailing" constant="20" id="2LL-mv-Zp4"/>
+                            <constraint firstItem="yA5-1X-aeQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2aB-aH-9Cc"/>
+                            <constraint firstItem="yA5-1X-aeQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9bu-7E-8f1"/>
                             <constraint firstItem="h9f-LR-UrA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IV5-gH-lBK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h9f-LR-UrA" secondAttribute="bottom" id="Mii-Hc-LYG"/>
                             <constraint firstItem="h9f-LR-UrA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Sob-KS-nyC"/>
@@ -120,6 +129,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="8pH-QV-7AT" id="qGS-Tf-Wlq"/>
                         <outlet property="imagesCollectionView" destination="h9f-LR-UrA" id="3pv-bH-FeN"/>
+                        <outlet property="noImagesPlaceholderLabel" destination="yA5-1X-aeQ" id="hVi-Sp-001"/>
                         <segue destination="87I-MZ-cBk" kind="show" identifier="ShowHoriZontalList" id="ogZ-4s-bJ6"/>
                     </connections>
                 </viewController>
